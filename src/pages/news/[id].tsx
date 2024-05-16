@@ -1,5 +1,5 @@
-import { NewsDetail } from "../../entities/News/ui";
 
+import { NewsDetailPage } from "../../views";
 
  
 
@@ -14,7 +14,7 @@ import { NewsDetail } from "../../entities/News/ui";
  const News =  ({id})=>{
 
   return(
-    <NewsDetail id={id}/>
+    <NewsDetailPage id={id}/>
   )
 }
 
