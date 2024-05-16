@@ -1,0 +1,8 @@
+.status{
+  display: grid;
+  justify-self: center;
+  align-items:center;
+  padding: 20px;
+  border-radius:10px;
+  background: #fff;
+}
