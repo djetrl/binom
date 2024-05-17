@@ -16,21 +16,21 @@ const LoadingComponent:FC<LoadingComponentProps> = ({isLoading, isError, Data})=
   if(isLoading){
     return(
       <aside className={`${style.status}`}>
-      <Spin indicator={antIcon} />;
+      <Spin indicator={antIcon} />
     </aside>
     )
   }
   if(isError){
     return (
       <aside className={`${style.status}`}>
-        <Empty />;
+        <Empty />
       </aside>
     )
   }
   if(!Data){
     return (
       <aside className={`${style.status}`}>
-        <Empty />;
+        <Empty />
       </aside>
     )
   }
