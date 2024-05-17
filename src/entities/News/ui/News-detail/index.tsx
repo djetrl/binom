@@ -2,6 +2,7 @@ import { dateConversion } from '../../../../shared';
 import { FC } from 'react';
 import { useQuery } from 'react-query';
 import style from './style.module.css';
+import Link from 'next/link';
 import { fetchOneNews } from '../../api';
 import LoadingComponent from '../../../../shared/loadingComponentn';
 type NewsDetailProps = {
@@ -19,6 +20,9 @@ const NewsDetail:FC<NewsDetailProps> = ({id})=>{
   return (
     <div className={`${style.NewsDetailsContainer}`}>
       <div className={`${style.NewsDetails_inner}`}>
+      <div className={`${style.NewsDetails_container__btn_Tomain}`}>
+        <Link href={`/`} className={`${style.NewsDetails_btn_Tomain}`}>На главную</Link>
+      </div>
         <div className={`${style.NewsDetails_header}`}>
           <div className={`${style.NewsDetails_header_inner}`}>
             <img src={data.blog.photo_url} alt={`${data.blog.title}_img`} className={`${style.NewsDetails_img}`} />
